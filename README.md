@@ -4,7 +4,7 @@ This is a mod for My Summer Car which allows you to teleport in the most common 
 # How to download
 In order to use the mod you need to download the application called MSCLoader. Link: https://github.com/piotrulos/MSCModLoader
 
-To download the mod you can either go to: https://www.nexusmods.com/mysummercar/mods/4480?tab=description  and download it from there or if you want to download it from here you need to go to Teleporter/Teleporter/bin/Debug and from there copy the file and paste it into the My Summer Car mods folder.
+To download the mod you can either go to: https://www.nexusmods.com/mysummercar/mods/4480?tab=description  and download it from there or if you want to download it from here you need to go to Teleporter/Teleporter/bin/Debug and from there copy the file Teleporter.dll and paste it into the My Summer Car mods folder.
 
 # How to use
 

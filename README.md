@@ -1,2 +1,11 @@
 # Teleporter-for-MSC
 This is a mod for My Summer Car which allows you to teleport in the most common locations on the map.
+
+# How to download
+In order to use the mod you need to download the application called MSCLoader. Link: https://github.com/piotrulos/MSCModLoader
+
+To download the mod you can either go to: https://www.nexusmods.com/mysummercar/mods/4480?tab=description  and download it from there or if you want to download it from here you need to go to Teleporter/Teleporter/bin/Debug and from there copy the file and paste it into the My Summer Car mods folder.
+
+# How to use
+
+To open the menu press the default keybind which is slash, but I recommend to change it to something like control + slash. And from there a box with buttons should pop up and if you click on of the buttons for example HOME it's going to teleport you to the player's home.

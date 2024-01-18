@@ -8,4 +8,4 @@ To download the mod you can either go to: https://www.nexusmods.com/mysummercar/
 
 # How to use
 
-To open the teleporter menu press the default keybind which is slash, but I recommend to change it to something like control + slash. And from there a box with buttons should pop up and if you click on one of the buttons for example HOME it's going to teleport you to the player's home.
+To open the teleporter menu press the default keybind which is slash, but I recommend to change it to something like control + slash. And from there a box with buttons should pop up and if you click on one of the buttons for example HOME it's going to teleport you to the player's home. 

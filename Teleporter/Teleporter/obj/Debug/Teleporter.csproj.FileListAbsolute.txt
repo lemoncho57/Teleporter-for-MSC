@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\Teleporter\Teleporter\bin\Debug\Teleporter.dll
+D:\Visual Studio Projects\Teleporter\Teleporter\bin\Debug\Teleporter.pdb
+D:\Visual Studio Projects\Teleporter\Teleporter\obj\Debug\Teleporter.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\Teleporter\Teleporter\obj\Debug\Teleporter.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\Teleporter\Teleporter\obj\Debug\Teleporter.dll
+D:\Visual Studio Projects\Teleporter\Teleporter\obj\Debug\Teleporter.pdb

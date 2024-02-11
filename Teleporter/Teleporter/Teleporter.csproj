@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inspector.cs" />
     <Compile Include="Teleporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

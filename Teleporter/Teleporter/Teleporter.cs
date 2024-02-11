@@ -12,7 +12,7 @@ namespace Teleporter
         public override string ID => "Teleporter"; // Your (unique) mod ID 
         public override string Name => "Teleporter"; // Your mod name
         public override string Author => "Lemoncho57"; // Name of the Author (your name)
-        public override string Version => "1.0"; // Version
+        public override string Version => "1.1"; // Version
         public override string Description => "This mod allows you to teleport to different locations"; // Short description of your mod
 
         public Keybind showGUIKey;
@@ -24,25 +24,38 @@ namespace Teleporter
 
 
         // Buttons
-        public bool buttonHome;
-        public bool buttonStore;
-        public bool buttonAppartments;
-        public bool buttonCottage;
-        public bool buttonDance;
-        public bool buttonDrag;
-        public bool buttonInspection;
-        public bool buttonJouko;
-        public bool buttonLandfill;
-        public bool buttonRepairShop;
-        public bool buttonSewage;
-        public bool buttonGrandma;
-        public bool buttonSkiHill;
-        public bool buttonStrawberry;
-        public bool buttonSuski;
-        public bool buttonTeimoHouse;
-        public bool buttonFarm;
-        public bool buttonVentti;
+        private bool buttonHome;
+        private bool buttonStore;
+        private bool buttonAppartments;
+        private bool buttonCottage;
+        private bool buttonDance;
+        private bool buttonDrag;
+        private bool buttonInspection;
+        private bool buttonJouko;
+        private bool buttonLandfill;
+        private bool buttonRepairShop;
+        private bool buttonSewage;
+        private bool buttonGrandma;
+        private bool buttonSkiHill;
+        private bool buttonStrawberry;
+        private bool buttonSuski;
+        private bool buttonTeimoHouse;
+        private bool buttonFarm;
+        private bool buttonVentti;
 
+        // Car buttons
+        private bool buttonSatsuma;
+        private bool buttonGifu;
+        private bool buttonHayosiko;
+        private bool buttonRusko;
+        private bool buttonMoped;
+
+        // Cars
+        private GameObject satsuma;
+        private GameObject gifu;
+        private GameObject hayosiko;
+        private GameObject ruscko;
+        private GameObject jonnezEs;
 
         public float hierachyWidth;
 
@@ -64,13 +77,21 @@ namespace Teleporter
         private void Mod_OnLoad()
         {
             styleAligment.alignment = TextAnchor.UpperCenter;
+
         }
         private void Mod_OnGUI()
         {
+            player = GameObject.Find("PLAYER");
+            satsuma = GameObject.Find("SATSUMA(557kg, 248)");
+            gifu = GameObject.Find("GIFU(750/450psi)");
+            hayosiko = GameObject.Find("HAYOSIKO(1500kg, 250)");
+            ruscko = GameObject.Find("RCO_RUSCKO12(270)");
+            jonnezEs = GameObject.Find("JONNEZ ES(Clone)");
+
             if (showGUI)
             {
 
-                GUI.Box(new Rect(510, 0, 500, 825), "Teleporter");
+                GUI.Box(new Rect(510, 0, 700, 825), "Teleporter");
 
                 buttonHome = GUI.Button(new Rect(610, 25, 200, 30), "Home");
                 buttonStore = GUI.Button(new Rect(610, 65, 200, 30), "Store");
@@ -91,6 +112,14 @@ namespace Teleporter
                 buttonFarm = GUI.Button(new Rect(610, 665, 200, 30), "Farm");
                 buttonVentti = GUI.Button(new Rect(610, 705, 200, 30), "Ventti");
 
+                GUI.Label(new Rect(940, 7, 150, 20), "Teleport:");
+
+                buttonSatsuma = GUI.Button(new Rect(870, 25, 200, 30), "Satsuma");
+                buttonGifu = GUI.Button(new Rect(870, 65, 200, 30), "Gifu");
+                buttonHayosiko = GUI.Button(new Rect(870, 105, 200, 30), "Hayosiko");
+                buttonRusko = GUI.Button(new Rect(870, 145, 200, 30), "Rusko");
+                buttonMoped = GUI.Button(new Rect(870, 185, 200, 30), "Jonnez Es");
+
                 GUI.Label(new Rect(670, 795, 200, 30), "Lemoncho57");
                 GUI.Label(new Rect(770, 795, 100, 30), "V1.0");
             }   
@@ -98,7 +127,7 @@ namespace Teleporter
 
         private void Mod_Update()
         {
-            player = GameObject.Find("PLAYER");
+            
             if (showGUIKey.GetKeybindDown())
             {
                 if (!showGUI)
@@ -186,6 +215,28 @@ namespace Teleporter
             else if (buttonVentti)
             {
                 player.transform.position = new Vector3(-173.285f, -4.108f, 1022.027f);
+            }
+
+            // Car transforms
+            else if (buttonSatsuma)
+            {
+                satsuma.transform.position = player.transform.position;
+            }
+            else if (buttonGifu)
+            {
+                gifu.transform.position = player.transform.position;
+            }
+            else if (buttonHayosiko)
+            {
+                hayosiko.transform.position = player.transform.position;
+            }
+            else if (buttonRusko)
+            {
+                ruscko.transform.position = player.transform.position;
+            }
+            else if (buttonMoped)
+            {
+                jonnezEs.transform.position = player.transform.position;
             }
         }
     }
